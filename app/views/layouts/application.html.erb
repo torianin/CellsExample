@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CellsExample</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="header">
+  <%= render_cell :my_debtors, :show, :user => "Rafał", :money => 10 %>
+<%= yield %>
+
+</body>
+</html>
